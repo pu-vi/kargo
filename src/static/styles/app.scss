@@ -16,6 +16,12 @@
 }
 
 .cargo-type {
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
   .ct-wrapper {
     text-align: center;
     margin-top: 2rem;
@@ -26,6 +32,11 @@
       margin: 1rem 0.5rem;
       display: inline-block;
       vertical-align: top;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #666;
+      }
 
       .ct-img-wrapper {
         width: 90%;

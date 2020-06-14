@@ -3,7 +3,7 @@ export const TYPES = [
     label: "Freight",
     subtext: "Part load, full load, custom load",
     image:
-      "https://cdn.autoportal.com/img/new-cars-gallery/ashokleyland/6-tyre/photo34/ashokleyland-6-tyre-59e2e417.jpg"
+      "https://lankainformation.lk/media/k2/items/cache/c1bd6ff3d7e3b5460737686a97c2c4ef_M.jpg"
   },
   {
     label: "Home & Office",
@@ -30,7 +30,8 @@ export const TYPES = [
   {
     label: "Other",
     subtext: "Other stuff",
+
     image:
-      "https://lankainformation.lk/media/k2/items/cache/c1bd6ff3d7e3b5460737686a97c2c4ef_M.jpg"
+      "https://cdn.autoportal.com/img/new-cars-gallery/ashokleyland/6-tyre/photo34/ashokleyland-6-tyre-59e2e417.jpg"
   }
 ];
