@@ -1,11 +1,11 @@
 import React from "react";
 
-const Home = () => (
+const Home = ({ labels }) => (
   <div className="container">
     <div className="center-box">
       <section></section>
-      <button>I am a superstar</button>
-      <button>I am not a superstar</button>
+      <button>{labels.HOME.CUSTOMER_CTA}</button>
+      <button>{labels.HOME.CLIENT_CTA}</button>
       <section></section>
     </div>
   </div>
