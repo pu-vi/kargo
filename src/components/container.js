@@ -1,14 +1,12 @@
-import React from "react";
-import Home from "./pages/home";
-import "../static/styles/app.scss";
-import Customer from "./pages/customer";
-import labels from "../config/labels";
+import Category from "./category/Category";
 
-const Container = () => (
-  <div>
-    <Home labels={labels} />
-    {/* <Customer /> */}
-  </div>
-);
+const Container = () => {
+  return (
+    <div>
+      This is the container
+      <Category />
+    </div>
+  );
+};
 
 export default Container;
