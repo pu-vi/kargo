@@ -9,7 +9,7 @@ const Category = () => (
         <Link to={Routes.HOME_OFFICE}>Home &amp; Office</Link>
       </li>
       <li>
-        <Link to={Routes.HOME_OFFICE}>Suitcases &amp; bags</Link>
+        <Link to={Routes.LUGGAGE}>Suitcases &amp; bags</Link>
       </li>
       <li>
         <Link to={Routes.HOME_OFFICE}>Full truckload</Link>

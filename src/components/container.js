@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import { Routes } from "../config/app.config";
 import HomeOffice from "./home_office";
+import Luggage from "./luggage";
 
 const Container = () => {
   return (
@@ -20,6 +21,10 @@ const Container = () => {
 
           <Route path={Routes.HOME_OFFICE}>
             <HomeOffice />
+          </Route>
+
+          <Route path={Routes.LUGGAGE}>
+            <Luggage />
           </Route>
 
           <Route path="/">

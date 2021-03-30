@@ -1,26 +1,47 @@
-const HomeOffice = () => {
-  return (
-    <div>
-      <h3>Enter source address</h3>
-      <form>
-        <div className="form-group">
-          <label htmlFor="from-address">Source address</label>
-          <input
-            required="required"
-            type="text"
-            className="form-control"
-            id="from-address"
-          />
-        </div>
+import { Component } from "react";
+// import { Redirect, Route, useRouteMatch } from "react-router-dom";
+import Address from "../common/address";
 
-        <div className="form-group">
-          <button type="submit" className="btn btn-primary">
-            Next
-          </button>
-        </div>
-      </form>
-    </div>
-  );
-};
+class HomeOffice extends Component {
+  state = {
+    step: "",
+
+    source: {
+      location: "",
+      address: "",
+      updated: false
+    },
+
+    destination: {
+      location: "",
+      address: "",
+      updated: false
+    }
+  };
+
+  updateAddress = (type, location, address) => {
+    this.setState({ [type]: { location, address }, updated: true });
+  };
+
+  render() {
+    const { source, destination, step } = this.state;
+
+    return (
+      <>
+        <Address
+          title="Source address"
+          {...source}
+          updateAddress={this.updateAddress.bind(this, "source")}
+        />
+
+        <Address
+          title="Destination address"
+          {...destination}
+          updateAddress={this.updateAddress.bind(this, "destination")}
+        />
+      </>
+    );
+  }
+}
 
 export default HomeOffice;
